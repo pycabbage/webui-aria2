@@ -16,7 +16,7 @@ if (typeof translations == "undefined") {
   translations = {};
 }
 
-translations.en_US = {
+translations.ja_JP = {
   // replace en_US to ll_CC, examples: zh_CN, de_AT.
   // header
   Search: "検索",
@@ -119,14 +119,14 @@ translations.en_US = {
   "Enter the Aria2 RPC password (empty if authentication not enabled)": "パスワードを入力（認証が無効の場合は空白）",
   "Enter base URL (optional)": "Base URL",
   "Direct Download": "直接ダウンロード",
-  "If supplied, links will be created to enable direct download from the Aria2 server.": "指定されている場合、Aria2サーバーから直接ダウンロードできるようにするためのリンクが作成されます。",
+  "If supplied, links will be created to enable direct download from the Aria2 server.": "指定されている場合、aria2サーバーから直接ダウンロードできるようにするためのリンクが作成されます。",
   "(Requires appropriate webserver to be configured.)": "（適切なWebサーバーを構成する必要があります。）",
   "Save Connection configuration": "接続設定を保存",
   Filter: "フィルター",
   // server info modal
-  "Aria2 server info": "Aria2サーバー情報",
-  "Aria2 Version": "Aria2バージョン",
-  "Features Enabled": "Features Enabled",
+  "Aria2 server info": "aria2サーバー情報",
+  "Aria2 Version": "aria2バージョン",
+  "Features Enabled": "有効化された実験的機能",
   // about modal
   "To download the latest version of the project, add issues or to contribute back, head on to": "プロジェクトの最新バージョンをダウンロードしたり、問題を追加したり、貢献したりするには、以下に進んでください：",
   "Or you can open the latest version in the browser through": "または、ブラウザで最新バージョンを開くことができます。",
@@ -135,27 +135,27 @@ translations.en_US = {
   "Download status": "ダウンロード状態",
   "Download Speed": "ダウンロード速度",
   "Upload Speed": "アップロード速度",
-  "Estimated time": "",
-  "Download Size": "",
-  Downloaded: "",
-  Progress: "",
-  "Download Path": "",
-  Uploaded: "",
-  "Download GID": "",
-  "Number of Pieces": "",
-  "Piece Length": "",
+  "Estimated time": "残り時間",
+  "Download Size": "サイズ",
+  Downloaded: "完了",
+  Progress: "進捗",
+  "Download Path": "ダウンロード先",
+  Uploaded: "アップロード",
+  "Download GID": "GID",
+  "Number of Pieces": "ピース数",
+  "Piece Length": "ピースの長さ",
 
   //alerts
-  "The last connection attempt was unsuccessful. Trying another configuration": "",
-  "Oh Snap!": "",
+  "The last connection attempt was unsuccessful. Trying another configuration": "接続できませんでした。再試行しています。",
+  "Oh Snap!": "エラー",
   "Could not connect to the aria2 RPC server. Will retry in 10 secs. You might want to check the connection settings by going to Settings > Connection Settings":
-    "",
+    "aria2 RPCサーバーに接続できませんでした。10秒後に再試行します。[設定]→[接続設定]に移動して、接続設定を確認してください。",
   "Authentication failed while connecting to Aria2 RPC server. Will retry in 10 secs. You might want to confirm your authentication details by going to Settings > Connection Settings":
-    "",
-  "Successfully connected to Aria2 through its remote RPC …": "",
+    "aria2 RPCサーバーへの接続中に認証に失敗しました。10秒後に再試行します。 [設定]→[接続設定]に移動して、認証の設定を確認してください。",
+  "Successfully connected to Aria2 through its remote RPC …": "aria2に接続しました",
   "Successfully connected to Aria2 through remote RPC, however the connection is still insecure. For complete security try adding an authorization secret token while starting Aria2 (through the flag --rpc-secret)":
-    "",
-  "Trying to connect to aria2 using the new connection configuration": "",
+    "リモートRPCを介してaria2に接続しましたが、接続はまだ安全ではありません。完全なセキュリティを確保するには、aria2の起動時に認証シークレットトークンを追加してみてください。（--rpc-secret）",
+  "Trying to connect to aria2 using the new connection configuration": "新しい接続構成を使用してaria2に接続しています",
   // {{name}} refers to the download name, do not modify.
-  "Remove {{name}} and associated meta-data?": ""
+  "Remove {{name}} and associated meta-data?": "{{name}}と関連するメタデータを削除しますか？"
 };
